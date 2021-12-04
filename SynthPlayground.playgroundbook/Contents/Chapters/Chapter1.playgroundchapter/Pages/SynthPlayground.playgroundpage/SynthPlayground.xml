@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hello there! 😉 In case you're wondering, I copied this from the Code Machine example.-->
+<trail version="1.1" name="0101">
+    <steps>
+        
+        <step type="context" name="welcome">
+            <blocks>
+                <block type="title">
+                    <title>Welcome To SynthPlayground!</title>
+                </block>
+                
+                <block type="text">
+                    <text>Welcome to my playground! This playground is a synthesizer that I created in Swift using system frameworks, with an all SwiftUI interface. But before testing, please read the manual pages and make sure to enable fullscreen mode for the best experience</text>
+                </block>
+                
+                <block type="text">
+                    <text>The frameworks used are Foundation, AVFoundation, CoreAudio, AudioUnit, Accelerate, AudioToolbox, SwiftUI and CoreMIDI.</text>
+                </block>
+                
+                <block type="text">
+                    <text> This playground is primairly meant to be used on iPadOS, but can also be used on macOS using the Playground App.</text>
+                </block>
+                
+                <block type="text">
+                    <text></text>
+                </block>
+                
+                <block type="title">
+                    <title>Features</title>
+                </block>
+                
+                <block type="text">
+                    <text></text>
+                </block>
+                
+                <block type="text">
+                    <text>Here is a quick presentation of the playground features:</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Multi-voice synthesizer</cv></text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Envelopes</cv></text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Low-pass filters</cv></text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Many parameters</cv></text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Multiple waveforms</cv></text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Custom waveform generation</cv></text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Waveform and envelope drawing</cv></text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>On-Screen Piano</cv></text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>External MIDI controller support</cv></text>
+                </block>
+
+                
+                <block type="buttons" alignment="trailing">
+                    <button href="@nextStep" symbol="arrow.right.circle.fill">
+                        <text>Next</text>
+                    </button>
+                </block>
+                
+                
+            </blocks>
+        </step>
+        
+        <step type="context">
+            <blocks>
+
+                <block type="title">
+                    <title>Controls</title>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Rotate Knobs:</cv> Drag the knob with a finger or an Apple pencil to rotate it. You can drag vertically, horizontally or both at once.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Reset Control:</cv> Double tap a control to reset it to the default value.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Piano:</cv> Press a key to play a note. You can slide your finger in the indicated zone to show more octaves. C notes are marked with a "C" and the octave number. You can also modulate parameters while playing.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Playing:</cv> You can play up to 8 notes at once</text>
+                </block>
+                
+                <block type="text">
+                    <text></text>
+                </block>
+                
+                <block type="title">
+                    <title>Oscillators</title>
+                </block>
+                
+                <block type="text">
+                    <text></text>
+                </block>
+                
+                <block type="text">
+                    <text>The playground contains two oscillators, each of which having different parameters. Here is an explanation of what they are doing:</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Semi:</cv> The oscillator played note offset.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Oct:</cv> The oscillator played octave offset.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Amplitude:</cv> Adjusts the oscillator amplitude.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Tuning:</cv> Tunes the oscillator frequency.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Waveform:</cv> Selects the oscillator rendered waveform.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Formula:</cv> See the formula parser section of the manual.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Toggle:</cv> Enables / disables the oscillator.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Panic:</cv> Instantly stops all of the signals generated by the oscillator.</text>
+                </block>
+            
+                <block type="buttons" alignment="trailing">
+                    <button href="@nextStep" symbol="arrow.right.circle.fill">
+                        <text>Next</text>
+                    </button>
+                </block>
+                
+                
+            </blocks>
+        </step>
+        
+        <step type="context">
+            <blocks>
+                <block type="title">
+                    <title>Envelopes</title>
+                </block>
+                <block type="text">
+                    <text>Each of the oscillators has an ADSR envelope. Envelopes also have parameters that can be modulated.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Attack:</cv> Determines how long it takes for the oscillator to reach its maximum amplitude.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Decay:</cv> Determines how long it takes for the oscillator to reach the sustain amplitude.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Sustain:</cv> The amplitude at which the oscillator will stay after the decay phase.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Release:</cv> Determines how long it takes for the oscillator to reach 0 from the sustain amplitude.</text>
+                </block>
+                
+                <block type="buttons" alignment="trailing">
+                    <button href="@nextStep" symbol="arrow.right.circle.fill">
+                        <text>Next</text>
+                    </button>
+                </block>
+                
+            </blocks>
+        </step>
+        
+        <step type="context">
+            <blocks>
+                <block type="title">
+                    <title>Filters</title>
+                </block>
+                <block type="text">
+                    <text>After being processed by the envelope, the signal can also pass through a low-pass filter.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Toggle:</cv> Enables / disables the filter.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Cutoff:</cv> Adjusts the filter cutoff frequency.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Q:</cv> Adjusts the filter resonance.</text>
+                </block>
+                
+                <block type="buttons" alignment="trailing">
+                    <button href="@nextStep" symbol="arrow.right.circle.fill">
+                        <text>Next</text>
+                    </button>
+                </block>
+                
+            </blocks>
+        </step>
+        
+        
+        <step type="context">
+            <blocks>
+                <block type="title">
+                    <title>Settings</title>
+                </block>
+                <block type="text">
+                    <text>Using the settings tab, you can edit global parameters: </text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Oscillator 1 Color:</cv> Changes the drawing color of the first oscillator.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Oscillator 2 Color:</cv> Changes the drawing color of the second oscillator.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>MIDI Device:</cv> Allows you to use an external MIDI controller. You can plug in a MIDI Keyboard using a USB-C dongle.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Master Amplitude:</cv> Adjusts the amplitude of the two oscillators after the filter processing.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- <cv>Master Tuning:</cv> Adjusts the tuning of the two oscillators.</text>
+                </block>
+                
+                <block type="buttons" alignment="trailing">
+                    <button href="@nextStep" symbol="arrow.right.circle.fill">
+                        <text>Next</text>
+                    </button>
+                </block>
+                
+            </blocks>
+        </step>
+        
+        <step type="context">
+            <blocks>
+                <block type="title">
+                    <title>Formula Parser</title>
+                </block>
+
+                <block type="text">
+                    <text>The formula parser allows you to generate custom waveforms using mathematical formulas. The parser will basically turn your input string into a callable block of code.</text>
+                </block>
+                
+                <block type="text">
+                    <text>The generated block will then be called to generate the audio signal. However, doing this is quite resource demanding (depending on the complexity of the formula) because of recursive calls (Check the <cv>Parser</cv> class to understand how it works)</text>
+                </block>
+                
+                <block type="text">
+                    <text>Try to avoid complex compositions (more than 3-4 functions) if you want to keep away from performance drops. If your formula is too demanding, you will start to hear your audio output crackling (or no output at all).</text>
+                </block>
+                
+                <block type="text">
+                    <text>Avoid divisions by <cv>0</cv> at <cv>all</cv> costs.</text>
+                </block>
+                
+                <block type="text">
+                    <text>Here are the valid operators you can use in your formulas: <cv>x, +, -, *, /, %, ^, sin, cos, tan, cosh, sinh, tanh, acos, asin, atan, acosh, asinh, atanh, min, max</cv></text>
+                </block>
+                
+                <block type="text">
+                    <text><cv>tan(x)</cv> with a long <cv>release</cv> sounds really cool</text>
+                </block>
+                
+                
+                <block type="buttons" alignment="trailing">
+                    <button href="@nextStep" symbol="arrow.right.circle.fill">
+                        <text>Next</text>
+                    </button>
+                </block>
+                
+            </blocks>
+        </step>
+        
+        
+        <step type="context">
+            <blocks>
+                <block type="title">
+                    <title>Known Issues</title>
+                </block>
+                
+                <block type="text">
+                    <text>- If using an external MIDI keyboard, pressing / releasing mutiple keys at the same time very quickly causes some messages not to be processed, and prevents the <cv>onKeyUp:</cv> or <cv>onKeyDown:</cv> behaviors from happening. (A note won't play or won't stop playing) If this happens, use the panic button or press the involved key again. I tried to fix this many times, without success.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- Double tap gestures doesn't work on macOS.</text>
+                </block>
+                
+                <block type="text">
+                    <text>- A piano key can't be pressed twice in a row on macOS. (Maybe it has something to do with .onLongPressGesture (<cv>PianoKeys.swift</cv> line <cv>45</cv> and <cv>91</cv>)) 🤔</text>
+                </block>
+                
+                <block type="text">
+                    <text>- The audio output stops working until a playground restart when a custom formula involves many divisions by <cv>0</cv>.</text>
+                </block>
+                
+            </blocks>
+        </step>
+        
+    </steps>
+</trail>

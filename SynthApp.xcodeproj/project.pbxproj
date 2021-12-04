@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		724BEA18261FDBA200C2A8AF /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724BEA17261FDBA200C2A8AF /* Parser.swift */; };
+		724F3779261F027000D6AB29 /* ParameterStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F3778261F027000D6AB29 /* ParameterStepper.swift */; };
+		724F377D261F062500D6AB29 /* OscillatorParamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F377C261F062500D6AB29 /* OscillatorParamView.swift */; };
+		7257382C2623D05E00619CE2 /* AudioBufferedBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725738262623D05E00619CE2 /* AudioBufferedBus.swift */; };
+		7257382D2623D05E00619CE2 /* SynthAUDSPKernelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725738272623D05E00619CE2 /* SynthAUDSPKernelAdapter.swift */; };
+		7257382E2623D05E00619CE2 /* AudioUnitFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725738282623D05E00619CE2 /* AudioUnitFactory.swift */; };
+		7257382F2623D05E00619CE2 /* DSPKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725738292623D05E00619CE2 /* DSPKernel.swift */; };
+		725738302623D05E00619CE2 /* SynthDSPKernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7257382A2623D05E00619CE2 /* SynthDSPKernel.swift */; };
+		725738312623D05E00619CE2 /* SynthAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7257382B2623D05E00619CE2 /* SynthAudioUnit.swift */; };
+		7258EE57262BADD90025A1D1 /* ScrollPianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7258EE56262BADD90025A1D1 /* ScrollPianoView.swift */; };
+		726A69812626E60000EEBB4F /* Envelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A69802626E60000EEBB4F /* Envelope.swift */; };
+		726A698626273D5100EEBB4F /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726A698526273D5100EEBB4F /* Knob.swift */; };
+		7272F0AA262A4A54001AF7FD /* Ramp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272F0A9262A4A54001AF7FD /* Ramp.swift */; };
+		7291230D261E67640018A950 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7291230C261E67640018A950 /* EntryView.swift */; };
+		72912312261E677F0018A950 /* MIDIDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72912311261E677F0018A950 /* MIDIDevicesView.swift */; };
+		72912315261E67B00018A950 /* SettingsBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72912314261E67B00018A950 /* SettingsBarView.swift */; };
+		72912319261E67E50018A950 /* WaveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72912318261E67E50018A950 /* WaveForm.swift */; };
+		7291231D261E68160018A950 /* OscillatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7291231C261E68160018A950 /* OscillatorView.swift */; };
+		72912327261E74C80018A950 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72912326261E74C80018A950 /* SettingsView.swift */; };
+		729DAB6C262B5123008A65EA /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729DAB6B262B5123008A65EA /* FilterView.swift */; };
+		72A7615D262B333E00F3EE76 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A7615C262B333E00F3EE76 /* Filter.swift */; };
+		72CAD66D262B159F00F8F847 /* TextFieldAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CAD66C262B159F00F8F847 /* TextFieldAlert.swift */; };
+		72D76976261CE7B100731656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D76975261CE7B100731656 /* AppDelegate.swift */; };
+		72D76978261CE7B100731656 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D76977261CE7B100731656 /* SceneDelegate.swift */; };
+		72D7697C261CE7B300731656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72D7697B261CE7B300731656 /* Assets.xcassets */; };
+		72D7697F261CE7B300731656 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72D7697E261CE7B300731656 /* Preview Assets.xcassets */; };
+		72D76982261CE7B300731656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D76980261CE7B300731656 /* LaunchScreen.storyboard */; };
+		72D7698D261CE7F800731656 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D7698A261CE7F800731656 /* MIDIManager.swift */; };
+		72D7698F261CE7F800731656 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D7698C261CE7F800731656 /* AudioEngine.swift */; };
+		72E71C17262B66AF00AFAD6D /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E71C16262B66AF00AFAD6D /* PianoView.swift */; };
+		72E71C19262B96DF00AFAD6D /* KeyShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E71C18262B96DF00AFAD6D /* KeyShapes.swift */; };
+		72E71C1C262B970800AFAD6D /* PianoKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E71C1B262B970800AFAD6D /* PianoKeys.swift */; };
+		72EC9F4F2626563B00E80A04 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC9F4E2626563B00E80A04 /* Extensions.swift */; };
+		72EC9F532626565E00E80A04 /* ParserFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC9F522626565E00E80A04 /* ParserFunctions.swift */; };
+		72EC9F5D262658FE00E80A04 /* Oscillator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC9F5C262658FE00E80A04 /* Oscillator.swift */; };
+		72EC9F612626591800E80A04 /* Signals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC9F602626591800E80A04 /* Signals.swift */; };
+		72EC9F642626592B00E80A04 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EC9F632626592B00E80A04 /* Voice.swift */; };
+		72F85C23262760A100C2D153 /* EnvelopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F85C22262760A100C2D153 /* EnvelopeView.swift */; };
+		72F85C292627627A00C2D153 /* EnvelopePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F85C282627627A00C2D153 /* EnvelopePoint.swift */; };
+		72FFB37E262A207500CA3EFE /* BackgroundGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFB37D262A207500CA3EFE /* BackgroundGraph.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72BB58C826229C84007813E3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72E914A9262677170079738B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		724BEA17261FDBA200C2A8AF /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		724F3778261F027000D6AB29 /* ParameterStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterStepper.swift; sourceTree = "<group>"; };
+		724F377C261F062500D6AB29 /* OscillatorParamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorParamView.swift; sourceTree = "<group>"; };
+		7255C888261E04BC00071C87 /* SynthApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SynthApp.entitlements; sourceTree = "<group>"; };
+		725738262623D05E00619CE2 /* AudioBufferedBus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioBufferedBus.swift; sourceTree = "<group>"; };
+		725738272623D05E00619CE2 /* SynthAUDSPKernelAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthAUDSPKernelAdapter.swift; sourceTree = "<group>"; };
+		725738282623D05E00619CE2 /* AudioUnitFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUnitFactory.swift; sourceTree = "<group>"; };
+		725738292623D05E00619CE2 /* DSPKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSPKernel.swift; sourceTree = "<group>"; };
+		7257382A2623D05E00619CE2 /* SynthDSPKernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthDSPKernel.swift; sourceTree = "<group>"; };
+		7257382B2623D05E00619CE2 /* SynthAudioUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynthAudioUnit.swift; sourceTree = "<group>"; };
+		7258EE56262BADD90025A1D1 /* ScrollPianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollPianoView.swift; sourceTree = "<group>"; };
+		726A69802626E60000EEBB4F /* Envelope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Envelope.swift; sourceTree = "<group>"; };
+		726A698526273D5100EEBB4F /* Knob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		7272F0A9262A4A54001AF7FD /* Ramp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ramp.swift; sourceTree = "<group>"; };
+		7291230C261E67640018A950 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		72912311261E677F0018A950 /* MIDIDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIDevicesView.swift; sourceTree = "<group>"; };
+		72912314261E67B00018A950 /* SettingsBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBarView.swift; sourceTree = "<group>"; };
+		72912318261E67E50018A950 /* WaveForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveForm.swift; sourceTree = "<group>"; };
+		7291231C261E68160018A950 /* OscillatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorView.swift; sourceTree = "<group>"; };
+		72912326261E74C80018A950 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		729DAB6B262B5123008A65EA /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		72A7615C262B333E00F3EE76 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		72CAD66C262B159F00F8F847 /* TextFieldAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAlert.swift; sourceTree = "<group>"; };
+		72D76972261CE7B100731656 /* SynthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SynthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72D76975261CE7B100731656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72D76977261CE7B100731656 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72D7697B261CE7B300731656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72D7697E261CE7B300731656 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72D76981261CE7B300731656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72D76983261CE7B300731656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72D7698A261CE7F800731656 /* MIDIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		72D7698C261CE7F800731656 /* AudioEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		72E71C16262B66AF00AFAD6D /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
+		72E71C18262B96DF00AFAD6D /* KeyShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyShapes.swift; sourceTree = "<group>"; };
+		72E71C1B262B970800AFAD6D /* PianoKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeys.swift; sourceTree = "<group>"; };
+		72EC9F4E2626563B00E80A04 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		72EC9F522626565E00E80A04 /* ParserFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserFunctions.swift; sourceTree = "<group>"; };
+		72EC9F5C262658FE00E80A04 /* Oscillator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oscillator.swift; sourceTree = "<group>"; };
+		72EC9F602626591800E80A04 /* Signals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signals.swift; sourceTree = "<group>"; };
+		72EC9F632626592B00E80A04 /* Voice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
+		72F85C22262760A100C2D153 /* EnvelopeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvelopeView.swift; sourceTree = "<group>"; };
+		72F85C282627627A00C2D153 /* EnvelopePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvelopePoint.swift; sourceTree = "<group>"; };
+		72FFB37D262A207500CA3EFE /* BackgroundGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGraph.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72D7696F261CE7B100731656 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7231AB38262C909C0093441F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		725738252623D05E00619CE2 /* AudioUnit */ = {
+			isa = PBXGroup;
+			children = (
+				7257382B2623D05E00619CE2 /* SynthAudioUnit.swift */,
+				725738262623D05E00619CE2 /* AudioBufferedBus.swift */,
+				725738272623D05E00619CE2 /* SynthAUDSPKernelAdapter.swift */,
+				725738282623D05E00619CE2 /* AudioUnitFactory.swift */,
+				725738292623D05E00619CE2 /* DSPKernel.swift */,
+				7257382A2623D05E00619CE2 /* SynthDSPKernel.swift */,
+			);
+			path = AudioUnit;
+			sourceTree = "<group>";
+		};
+		726A698426273D3F00EEBB4F /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				724F3778261F027000D6AB29 /* ParameterStepper.swift */,
+				726A698526273D5100EEBB4F /* Knob.swift */,
+				72F85C282627627A00C2D153 /* EnvelopePoint.swift */,
+				72FFB37D262A207500CA3EFE /* BackgroundGraph.swift */,
+				72CAD66C262B159F00F8F847 /* TextFieldAlert.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		7291230B261E67550018A950 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72E71C1A262B96E600AFAD6D /* Piano */,
+				726A698426273D3F00EEBB4F /* Subviews */,
+				72912317261E67DB0018A950 /* Shapes */,
+				7291230C261E67640018A950 /* EntryView.swift */,
+				72912311261E677F0018A950 /* MIDIDevicesView.swift */,
+				72912314261E67B00018A950 /* SettingsBarView.swift */,
+				7291231C261E68160018A950 /* OscillatorView.swift */,
+				72912326261E74C80018A950 /* SettingsView.swift */,
+				724F377C261F062500D6AB29 /* OscillatorParamView.swift */,
+				72F85C22262760A100C2D153 /* EnvelopeView.swift */,
+				729DAB6B262B5123008A65EA /* FilterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72912317261E67DB0018A950 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				72912318261E67E50018A950 /* WaveForm.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		72D76969261CE7B100731656 = {
+			isa = PBXGroup;
+			children = (
+				72D76974261CE7B100731656 /* SynthApp */,
+				72D76973261CE7B100731656 /* Products */,
+				7231AB38262C909C0093441F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		72D76973261CE7B100731656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72D76972261CE7B100731656 /* SynthApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72D76974261CE7B100731656 /* SynthApp */ = {
+			isa = PBXGroup;
+			children = (
+				72EC9F5B262658F200E80A04 /* Audio */,
+				72EC9F58262656BD00E80A04 /* Parser */,
+				725738252623D05E00619CE2 /* AudioUnit */,
+				7291230B261E67550018A950 /* Views */,
+				7255C888261E04BC00071C87 /* SynthApp.entitlements */,
+				72EC9F4E2626563B00E80A04 /* Extensions.swift */,
+				72D7698A261CE7F800731656 /* MIDIManager.swift */,
+				72D76975261CE7B100731656 /* AppDelegate.swift */,
+				72D76977261CE7B100731656 /* SceneDelegate.swift */,
+				72D7697B261CE7B300731656 /* Assets.xcassets */,
+				72D76980261CE7B300731656 /* LaunchScreen.storyboard */,
+				72D76983261CE7B300731656 /* Info.plist */,
+				72D7697D261CE7B300731656 /* Preview Content */,
+			);
+			path = SynthApp;
+			sourceTree = "<group>";
+		};
+		72D7697D261CE7B300731656 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				72D7697E261CE7B300731656 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		72E71C1A262B96E600AFAD6D /* Piano */ = {
+			isa = PBXGroup;
+			children = (
+				72E71C16262B66AF00AFAD6D /* PianoView.swift */,
+				72E71C18262B96DF00AFAD6D /* KeyShapes.swift */,
+				72E71C1B262B970800AFAD6D /* PianoKeys.swift */,
+				7258EE56262BADD90025A1D1 /* ScrollPianoView.swift */,
+			);
+			path = Piano;
+			sourceTree = "<group>";
+		};
+		72EC9F58262656BD00E80A04 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				72EC9F522626565E00E80A04 /* ParserFunctions.swift */,
+				724BEA17261FDBA200C2A8AF /* Parser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		72EC9F5B262658F200E80A04 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				72EC9F602626591800E80A04 /* Signals.swift */,
+				72D7698C261CE7F800731656 /* AudioEngine.swift */,
+				72EC9F632626592B00E80A04 /* Voice.swift */,
+				72EC9F5C262658FE00E80A04 /* Oscillator.swift */,
+				726A69802626E60000EEBB4F /* Envelope.swift */,
+				7272F0A9262A4A54001AF7FD /* Ramp.swift */,
+				72A7615C262B333E00F3EE76 /* Filter.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72D76971261CE7B100731656 /* SynthApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72D76986261CE7B300731656 /* Build configuration list for PBXNativeTarget "SynthApp" */;
+			buildPhases = (
+				72D7696E261CE7B100731656 /* Sources */,
+				72D7696F261CE7B100731656 /* Frameworks */,
+				72D76970261CE7B100731656 /* Resources */,
+				72BB58C826229C84007813E3 /* Embed App Extensions */,
+				72E914A9262677170079738B /* Embed Frameworks */,
+				728DBAE326338995009480AC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SynthApp;
+			productName = SynthApp;
+			productReference = 72D76972261CE7B100731656 /* SynthApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72D7696A261CE7B100731656 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					72D76971261CE7B100731656 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 72D7696D261CE7B100731656 /* Build configuration list for PBXProject "SynthApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72D76969261CE7B100731656;
+			productRefGroup = 72D76973261CE7B100731656 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72D76971261CE7B100731656 /* SynthApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72D76970261CE7B100731656 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72D76982261CE7B300731656 /* LaunchScreen.storyboard in Resources */,
+				72D7697F261CE7B300731656 /* Preview Assets.xcassets in Resources */,
+				72D7697C261CE7B300731656 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		728DBAE326338995009480AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72D7696E261CE7B100731656 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72912315261E67B00018A950 /* SettingsBarView.swift in Sources */,
+				725738302623D05E00619CE2 /* SynthDSPKernel.swift in Sources */,
+				72EC9F612626591800E80A04 /* Signals.swift in Sources */,
+				72EC9F532626565E00E80A04 /* ParserFunctions.swift in Sources */,
+				72EC9F642626592B00E80A04 /* Voice.swift in Sources */,
+				72EC9F5D262658FE00E80A04 /* Oscillator.swift in Sources */,
+				72F85C292627627A00C2D153 /* EnvelopePoint.swift in Sources */,
+				7272F0AA262A4A54001AF7FD /* Ramp.swift in Sources */,
+				72D76976261CE7B100731656 /* AppDelegate.swift in Sources */,
+				7257382D2623D05E00619CE2 /* SynthAUDSPKernelAdapter.swift in Sources */,
+				729DAB6C262B5123008A65EA /* FilterView.swift in Sources */,
+				72912319261E67E50018A950 /* WaveForm.swift in Sources */,
+				7291230D261E67640018A950 /* EntryView.swift in Sources */,
+				7257382F2623D05E00619CE2 /* DSPKernel.swift in Sources */,
+				72A7615D262B333E00F3EE76 /* Filter.swift in Sources */,
+				72F85C23262760A100C2D153 /* EnvelopeView.swift in Sources */,
+				72CAD66D262B159F00F8F847 /* TextFieldAlert.swift in Sources */,
+				72FFB37E262A207500CA3EFE /* BackgroundGraph.swift in Sources */,
+				726A69812626E60000EEBB4F /* Envelope.swift in Sources */,
+				724BEA18261FDBA200C2A8AF /* Parser.swift in Sources */,
+				724F377D261F062500D6AB29 /* OscillatorParamView.swift in Sources */,
+				725738312623D05E00619CE2 /* SynthAudioUnit.swift in Sources */,
+				7257382C2623D05E00619CE2 /* AudioBufferedBus.swift in Sources */,
+				72D7698D261CE7F800731656 /* MIDIManager.swift in Sources */,
+				72E71C17262B66AF00AFAD6D /* PianoView.swift in Sources */,
+				726A698626273D5100EEBB4F /* Knob.swift in Sources */,
+				72E71C1C262B970800AFAD6D /* PianoKeys.swift in Sources */,
+				72E71C19262B96DF00AFAD6D /* KeyShapes.swift in Sources */,
+				72912327261E74C80018A950 /* SettingsView.swift in Sources */,
+				72912312261E677F0018A950 /* MIDIDevicesView.swift in Sources */,
+				7257382E2623D05E00619CE2 /* AudioUnitFactory.swift in Sources */,
+				72EC9F4F2626563B00E80A04 /* Extensions.swift in Sources */,
+				72D7698F261CE7F800731656 /* AudioEngine.swift in Sources */,
+				724F3779261F027000D6AB29 /* ParameterStepper.swift in Sources */,
+				7291231D261E68160018A950 /* OscillatorView.swift in Sources */,
+				72D76978261CE7B100731656 /* SceneDelegate.swift in Sources */,
+				7258EE57262BADD90025A1D1 /* ScrollPianoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		72D76980261CE7B300731656 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				72D76981261CE7B300731656 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		72D76984261CE7B300731656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72D76985261CE7B300731656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72D76987261CE7B300731656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SynthApp/SynthApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SynthApp/Preview Content\"";
+				DEVELOPMENT_TEAM = P6N3SJB864;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SynthApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sl4sh.SynthApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Profile macOS";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		72D76988261CE7B300731656 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SynthApp/SynthApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SynthApp/Preview Content\"";
+				DEVELOPMENT_TEAM = P6N3SJB864;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SynthApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.sl4sh.SynthApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Profile macOS";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72D7696D261CE7B100731656 /* Build configuration list for PBXProject "SynthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72D76984261CE7B300731656 /* Debug */,
+				72D76985261CE7B300731656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72D76986261CE7B300731656 /* Build configuration list for PBXNativeTarget "SynthApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72D76987261CE7B300731656 /* Debug */,
+				72D76988261CE7B300731656 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72D7696A261CE7B100731656 /* Project object */;
+}
